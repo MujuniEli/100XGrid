@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+#grid-container {
+  position: fixed;
+  inset: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  background: #f3f4f6;
+}
+.grid-inner {
+  position: relative;
+}
+.cell {
+  position: absolute;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+#zoom-indicator {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.8);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-size: 0.9rem;
+  z-index: 50;
+}
